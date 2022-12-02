@@ -113,6 +113,52 @@
             <ValueType>Separator</ValueType>
         </Parameter>
         <Parameter>
+            <Name>CheckBoxV</Name>
+            <Text>Додати змінний переріз</Text>
+            <Value>False</Value>
+            <ValueType>CheckBox</ValueType>
+        </Parameter>
+        <Parameter>
+            <Name>VaryingStart</Name>
+            <Text>Початок зони зміни перерізу</Text>
+            <Value>1500.</Value>
+            <MinValue>100.</MinValue>
+            <Visible>
+if CheckBoxV:
+    return True
+return False
+            </Visible>
+            <ValueType>Length</ValueType>
+        </Parameter>
+        <Parameter>
+            <Name>VaryingLength</Name>
+            <Text>Довжина зони зміни перерізу</Text>
+            <Value>1500.</Value>
+            <MinValue>0</MinValue>
+            <Visible>
+if CheckBoxV:
+    return True
+return False
+            </Visible>
+            <ValueType>Length</ValueType>
+        </Parameter>
+        <Parameter>
+            <Name>VaryingRibThick</Name>
+            <Text>Товщина ребра центрального перерізу</Text>
+            <Value>120.</Value>
+            <MinValue>120.</MinValue>
+            <Visible>
+if CheckBoxV:
+    return True
+return False
+            </Visible>
+            <ValueType>Length</ValueType>
+        </Parameter>
+        <Parameter>
+            <Name>Separator6</Name>
+            <ValueType>Separator</ValueType>
+        </Parameter>
+        <Parameter>
                 <Name>RotationAngleX</Name>
                 <Text>Поворот відносно осі X</Text>
                 <Value>0</Value>
